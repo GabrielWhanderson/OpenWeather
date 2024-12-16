@@ -1,0 +1,1 @@
+C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\OpenWeather.csproj;x64

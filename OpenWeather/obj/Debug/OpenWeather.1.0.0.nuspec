@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>OpenWeather</id>
+    <version>1.0.0</version>
+    <authors>OpenWeather</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0-android34.0">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-ios17.2">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-maccatalyst17.2">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.6" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net8.0-windows10.0.19041">
+        <dependency id="Microsoft.Extensions.Logging.Debug" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls" version="8.0.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Maui.Controls.Compatibility" version="8.0.6" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-android\OpenWeather.runtimeconfig.json" target="lib\net8.0-android34.0\OpenWeather.runtimeconfig.json" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-android\OpenWeather.dll" target="lib\net8.0-android34.0\OpenWeather.dll" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-android\OpenWeather.xml" target="lib\net8.0-android34.0\OpenWeather.xml" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-ios\iossimulator-x64\OpenWeather.runtimeconfig.json" target="lib\net8.0-ios17.2\OpenWeather.runtimeconfig.json" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-ios\iossimulator-x64\OpenWeather.dll" target="lib\net8.0-ios17.2\OpenWeather.dll" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\OpenWeather.runtimeconfig.json" target="lib\net8.0-maccatalyst17.2\OpenWeather.runtimeconfig.json" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-maccatalyst\maccatalyst-x64\OpenWeather.dll" target="lib\net8.0-maccatalyst17.2\OpenWeather.dll" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OpenWeather.runtimeconfig.json" target="lib\net8.0-windows10.0.19041\OpenWeather.runtimeconfig.json" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\OpenWeather.dll" target="lib\net8.0-windows10.0.19041\OpenWeather.dll" />
+    <file src="C:\Users\Cliente\source\repos\OpenWeather\OpenWeather\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri" target="lib\net8.0-windows10.0.19041\resources.pri" />
+  </files>
+</package>

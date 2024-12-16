@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OpenWeather.Views.NewPage1"
+             BackgroundColor="#4482F5">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label
+                Text="Clima"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1"
+                TextColor="White"
+                Padding="50"
+                FontSize="70"/>
+
+            <SearchBar
+                 Placeholder="Procure uma cidade..." 
+                 BackgroundColor="White"
+                 CancelButtonColor="Red"/>
+            <ListView
+                />
+            <Button
+                x:Name="CounterBtn"
+                Text="Verificar clima" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Fill"
+                BackgroundColor="#6BA9F5"/>
+
+
+            <Grid Margin="0,100,0,0" HorizontalOptions="Center">
+                <Label
+                    Text="CLIMA:"
+                    HorizontalOptions="Center"
+                    Margin="0,-40,200,0"
+                    FontSize="25"
+                     IsVisible="{Binding Visible}"
+                     FontAttributes="Bold"
+                    TextColor="White"
+                    />
+                <Label
+                    Text="DESCRIÇÃO:"
+                    HorizontalOptions="Center"
+                    Margin="0,40,200,0"
+                    FontSize="25"
+                     IsVisible="{Binding Visible}"
+                     FontAttributes="Bold"
+                    TextColor="White"
+                    />
+                <Label
+                    Text="UMIDADE:"
+                    HorizontalOptions="Center"
+                    Margin="0,120,200,0"
+                    FontSize="25"
+                     IsVisible="{Binding Visible}"
+                     FontAttributes="Bold"
+                    TextColor="White"
+                    />
+                <Label
+                    Text="VENTO:"
+                    HorizontalOptions="Center"
+                    Margin="0,200,200,0"
+                    FontSize="25"
+                     IsVisible="{Binding Visible}"
+                     FontAttributes="Bold"
+                    TextColor="White"
+                    />
+
+
+
+                <Label
+                Text="{Binding Main}"
+                IsVisible="{Binding Visible}"
+                HorizontalOptions="End"
+                Margin="0,-40,60,0"
+                FontSize="23"
+                 
+            />
+                <Label
+                Text="{Binding Description}"
+                IsVisible="{Binding Visible}"
+                Margin="200,40,0,0"
+                FontSize="22"
+                
+            />
+
+                <Label
+             Text="{Binding Humidity, StringFormat='{0}%'}"
+             IsVisible="{Binding Visible}"
+             HorizontalOptions="End"
+             Margin="0,120,75,0"
+             FontSize="25"
+    
+             />
+
+
+                <Label
+                 Text="{Binding Wind, StringFormat='{0} Km/h'}"
+                 IsVisible="{Binding Visible}"
+                 HorizontalOptions="End"
+                 Margin="0,200,40,0"
+                 FontSize="25"
+             />
+
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
