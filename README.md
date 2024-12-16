@@ -1,0 +1,1 @@
+Último trabalho da disciplina PAM-I(final do segundo módulo do curso técnico). Aplicativo que verifica condições climáticas por cidade conectado com a OpenWeather API. No momento, a conexão com a API não está funcionando corretamente.
